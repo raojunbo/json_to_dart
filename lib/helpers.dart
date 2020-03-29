@@ -191,7 +191,7 @@ String fixFieldName(String name,
     final firstCharType = typeDef.name.substring(0, 1).toLowerCase();
     properName = '$firstCharType$name';
   }
-  final fieldName = camelCaseFirstLower(properName);
+  final fieldName = properName;//camelCaseFirstLower(properName);
   if (privateField) {
     return '_$fieldName';
   }
